@@ -1,0 +1,50 @@
+{
+	"Database": {
+		"Type": "Bolt",
+		"Bolt": {		
+ 			"Path": "goweb.db"
+  		},
+		"MongoDB": {
+			"URL": "127.0.0.1",
+			"Database": "goweb"
+		},
+		"MySQL": {
+			"Username": "root",
+			"Password": "",
+			"Name": "goweb",
+			"Hostname": "127.0.0.1",
+			"Port": 3306,
+			"Parameter": "?charset=utf8mb4&parseTime=True&loc=Local"
+		}
+	},
+	"Redis": {
+		"Host": "127.0.0.1:6379",
+		"Password": "",
+		"MaxIdle": 30,
+		"MaxActive": 30,
+		"IdleTimeout": 200
+	},
+	"Server": {
+		"Hostname": "",
+		"RunMode": "debug",
+		"UseHTTP": true,
+		"UseHTTPS": false,
+		"HTTPPort": 80,
+		"HTTPSPort": 443,
+		"ReadTimeout": 60,
+		"WriteTimeout": 60,
+		"CertFile": "tls/server.crt",
+		"KeyFile": "tls/server.key"
+	},
+	"Session": {
+		"SecretKey": "@r4B?EThaSEh_drudR7P_hub=s#s2Pah",
+		"Name": "gosess",
+		"Options": {
+			"Path": "/",
+			"Domain": "",
+			"MaxAge": 28800,
+			"Secure": false,
+			"HttpOnly": true
+		}
+	}
+}
